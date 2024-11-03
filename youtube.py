@@ -5,7 +5,7 @@ import sys
 import requests
 
 
-from config import config
+from configs import config
 
 def fetch_playlist_items_page(google_api_key,youtube_playlist_id,page_token=None):
     response = requests.get('https://www.googleapis.com/youtube/v3/playlistItems', params={"key": google_api_key,
